@@ -1,0 +1,9 @@
+car
+bus
+person
+bike
+auto
+van
+cycle
+truck
+Accident
