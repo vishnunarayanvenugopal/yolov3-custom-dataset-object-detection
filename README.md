@@ -13,6 +13,7 @@ Installation of YOLO V3 and object detection using the same on our own custom da
 1. Download Dataset (images of objects you want to detect)
 2. Label the Data
 3. Merge text output and image file input to one folder
+4. Train & Test file generation
 
 #### 1.Download Dataset
 
@@ -60,6 +61,14 @@ Label all images. The YOLOV3\data_label\main\output\YOLO_darknet will now contai
 ![Output_text_files](https://github.com/vichuroxx/YOLOV3/blob/master/img/3%20.%20data_output.JPG)
 
 #### 3. Merge text output and image file input to one folder
+
+Create a folder named data or any other and copy all the input images + output text file in the YOLOV3\data_label\main\output\YOLO_darknet together. it will look like the figure below.
+
+![Merge Files](https://github.com/vichuroxx/YOLOV3/blob/master/img/6.%20merge.JPG)
+
+#### 4. Train & Test file generation
+
+
 
 
 
