@@ -116,15 +116,15 @@ keep all the files, theres no issue.
 
 - Edit the yolov3.cfg &  yolov3-tiny-obj.cfg files to change anchor,filters and class.
   - edit the classes=[no of classes you have]
-  - ![Merge Files](https://github.com/vichuroxx/YOLOV3/blob/master/img/6.%20merge.JPG)
+  - ![Merge Files](https://github.com/vichuroxx/YOLOV3/blob/master/img/7.%20classes.JPG)
   - edit the anchors=[anchors value in your generated file]
-  - ![Merge Files](https://github.com/vichuroxx/YOLOV3/blob/master/img/6.%20merge.JPG)
+  - ![Merge Files](https://github.com/vichuroxx/YOLOV3/blob/master/img/8.%20anchors.JPG)
   - edit the filter=[calculate filter value from equation]
   - filter size=(num/3)*(classes+5) num is same as in .cfg file check for same
   - edit the filter values just above the anchors value (not all the filter values)
-  - ![Merge Files](https://github.com/vichuroxx/YOLOV3/blob/master/img/6.%20merge
+  - ![Merge Files](https://github.com/vichuroxx/YOLOV3/blob/master/img/9.%20filter.JPG)
+- Change path inside test.txt and train.txt from your path to google drive darknet path:  /content/darknet/data_for_colab/data/
   
-
 Now compress the Data for collab folder to ZIP not RAR or any other format and upload to your google drive.
 
 
