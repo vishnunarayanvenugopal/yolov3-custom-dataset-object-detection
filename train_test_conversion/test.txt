@@ -1,14 +1,4 @@
-C:/Users/User/Desktop/project/vishnu/Yolo-Training-GoogleColab-master/data/14 (2).jpg
-C:/Users/User/Desktop/project/vishnu/Yolo-Training-GoogleColab-master/data/2.jpg
-C:/Users/User/Desktop/project/vishnu/Yolo-Training-GoogleColab-master/data/4 (2).jpg
-C:/Users/User/Desktop/project/vishnu/Yolo-Training-GoogleColab-master/data/Audi-ANI.jpg
-C:/Users/User/Desktop/project/vishnu/Yolo-Training-GoogleColab-master/data/download (14).jpg
-C:/Users/User/Desktop/project/vishnu/Yolo-Training-GoogleColab-master/data/download (3).jpg
-C:/Users/User/Desktop/project/vishnu/Yolo-Training-GoogleColab-master/data/highways.jpg
-C:/Users/User/Desktop/project/vishnu/Yolo-Training-GoogleColab-master/data/images (15).jpg
-C:/Users/User/Desktop/project/vishnu/Yolo-Training-GoogleColab-master/data/images (24).jpg
-C:/Users/User/Desktop/project/vishnu/Yolo-Training-GoogleColab-master/data/images (33).jpg
-C:/Users/User/Desktop/project/vishnu/Yolo-Training-GoogleColab-master/data/images (42).jpg
-C:/Users/User/Desktop/project/vishnu/Yolo-Training-GoogleColab-master/data/images (51).jpg
-C:/Users/User/Desktop/project/vishnu/Yolo-Training-GoogleColab-master/data/images (60).jpg
-C:/Users/User/Desktop/project/vishnu/Yolo-Training-GoogleColab-master/data/p07ldrwqb.jpg
+C:/Users/User/Documents/GitHub/YOLOV3/data/18.jpg
+C:/Users/User/Documents/GitHub/YOLOV3/data/cars-1485225255.jpg
+C:/Users/User/Documents/GitHub/YOLOV3/data/imsssage.jpg
+C:/Users/User/Documents/GitHub/YOLOV3/data/vietnam-car-crash-woman-cctv-viral-video-1705646.jpg

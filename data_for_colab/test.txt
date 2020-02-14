@@ -1,0 +1,4 @@
+/content/darknet/data_for_colab/data/18.jpg
+/content/darknet/data_for_colab/data/cars-1485225255.jpg
+/content/darknet/data_for_colab/data/imsssage.jpg
+/content/darknet/data_for_colab/data/vietnam-car-crash-woman-cctv-viral-video-1705646.jpg

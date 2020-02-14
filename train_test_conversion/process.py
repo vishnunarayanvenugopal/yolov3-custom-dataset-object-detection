@@ -5,7 +5,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 
 print(current_dir)
 
-current_dir = 'C:/Users/User/Desktop/project/vishnu/Yolo-Training-GoogleColab-master/data'
+current_dir = 'C:/Users/User/Documents/GitHub/YOLOV3/data'
 
 # Directory where the data will reside, relative to 'darknet.exe'
 #path_data = './NFPAdataset/'
