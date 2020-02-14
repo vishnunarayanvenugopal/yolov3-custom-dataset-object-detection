@@ -14,6 +14,9 @@ Installation of YOLO V3 and object detection using the same on our own custom da
 2. Label the Data
 3. Merge text output and image file input to one folder
 4. Train & Test file generation
+5. Anchor Calculation
+6. Prepare Data for collab folder
+7.
 
 #### 1.Download Dataset
 
@@ -68,6 +71,61 @@ Create a folder named data or any other and copy all the input images + output t
 
 #### 4. Train & Test file generation
 
+Edit process.py and change path of current_dir = 'C:/Users/User/Desktop/project/vishnu/Yolo-Training-GoogleColab-master/data' to the location where data folder containing both text and image files are present.
+
+Open train_test_conversion folder and execute process.py program. This is to split your input into training and testing set.
+
+```
+cd ..\YOLOV3\train_test_conversion
+
+python process.py
+```
+Now the train.txt and test.txt files inside train_test_conversion folder will have splitted data.
+
+#### 5. Anchor calculation
+
+Open the anchors_calculation folder. Edit the anchors.py file and change the path of test.txt and  train.txt to yours that we have previously created. (at line 108 and 110). Edit output to your anchors folder path.
+
+```
+cd ..\YOLOV3\anchors_calculation
+
+python anchors.py
+```
+
+Now open anchors6.txt file in the location ...\YOLOV3\anchors_calculation\anchors. It contains the anchor value. We need that value in our configuration file.
+
+#### 6. Prepare Data for collab folder
+
+* Replace the data folder with your data folder containing images and text files.
+- Edit the obj.data file (enter the number of class no(car,bike etc) of objects to detect)
+  - classes= 9  
+  - train  = /content/darknet/data_for_colab/train.txt  
+  - valid  = /content/darknet/data_for_colab/test.txt  
+  - names = /content/darknet/data_for_colab/obj.names  
+  - backup = backup/
+- Edit obj.names files and list your classes line by line. In my clse (bike,car etc)
+- copy the test.txt and train.txt files to here
+- Now we have 3 other files, This is for YoloV3 and Yolo_tiny
+
+download the file darknet53.conv.74 from the link  https://pjreddie.com/media/files/darknet53.conv.74 and add it to this folder.
+
+darknet53.conv.74 & yolov3.cfg : YOLOV3
+yolov3-tiny.conv.15 & yolov3-tiny-obj.cfg : YOLOV3_TINY
+
+keep all the files, theres no issue.
+
+- Edit the yolov3.cfg &  yolov3-tiny-obj.cfg files to change anchor,filters and class.
+  - edit the classes=[no of classes you have]
+  - ![Merge Files](https://github.com/vichuroxx/YOLOV3/blob/master/img/6.%20merge.JPG)
+  - edit the anchors=[anchors value in your generated file]
+  - ![Merge Files](https://github.com/vichuroxx/YOLOV3/blob/master/img/6.%20merge.JPG)
+  - edit the filter=[calculate filter value from equation]
+  - filter size=(num/3)*(classes+5) num is same as in .cfg file check for same
+  - edit the filter values just above the anchors value (not all the filter values)
+  - ![Merge Files](https://github.com/vichuroxx/YOLOV3/blob/master/img/6.%20merge
+  
+
+Now compress the Data for collab folder to ZIP not RAR or any other format and upload to your google drive.
 
 
 
