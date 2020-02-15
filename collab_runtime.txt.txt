@@ -1,0 +1,11 @@
+#This code is to prevent collab from disconnecting
+
+1. cntrl + shift + i , Then goto console.
+
+
+
+function ClickConnect(){
+console.log("Working"); 
+document.querySelector("colab-toolbar-button#connect").click() 
+}
+setInterval(ClickConnect,60000)

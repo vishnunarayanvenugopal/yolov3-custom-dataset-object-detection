@@ -4,9 +4,12 @@
 
 Installation of YOLO V3 and object detection using the same on our own custom data set.The following is done in Google collab https://colab.research.google.com/ . You can try the same in google collab.
 
+![Output image](https://github.com/vichuroxx/YOLOV3/blob/master/img/out.png)
+
 ### START WITH FOLLOWING RESOURCES (Download Following)
 
-1. Download this github repository
+1. Download this github repository : https://github.com/vichuroxx/YOLOV3-Custom-dataset-Object-detection
+2. Download this collab file : https://github.com/vichuroxx/YOLOV3-Custom-dataset-Object-detection/blob/master/YoloV3.ipynb
 
 ### STEPS
 
@@ -16,7 +19,7 @@ Installation of YOLO V3 and object detection using the same on our own custom da
 4. Train & Test file generation
 5. Anchor Calculation
 6. Prepare Data for collab folder
-7.
+7. Run the collab file @ https://github.com/vichuroxx/YOLOV3-Custom-dataset-Object-detection/blob/master/YoloV3.ipynb
 
 #### 1.Download Dataset
 
@@ -26,13 +29,13 @@ Save all these images to YOLOV3/data_label/main/input
 
 There is a collection of cars and vehicle images in the folder because we want to detect vehicles.
 
-![Image of Dataset_input](https://github.com/vichuroxx/YOLOV3/blob/master/img/2%20.%20data_input.JPG)
+![Image of Dataset_input](https://github.com/vichuroxx/YOLOV3-Custom-dataset-Object-detection/blob/master/img/2%20.%20data_input.JPG)
 
 #### 2.Label Data
 
 Open the class_list.txt file in the YOLOV3/data_label/main/. In the text file edit and add the classes. For example we need to identify 9 classes, car ,bus,person,bike,auto,van,cycle etc. Add this line by line
 
-![Class list](https://github.com/vichuroxx/YOLOV3/blob/master/img/1.%20class_list.JPG)
+![Class list](https://github.com/vichuroxx/YOLOV3-Custom-dataset-Object-detection/blob/master/img/1.%20class_list.JPG)
 
 For labelling data we need to run a python program.This program requires the following to be installed in your PC or it will throw error.
 
@@ -49,7 +52,7 @@ cd ../YOLOV3/data_label/main/input
 python main.py
 ```
 
-![cmd](https://github.com/vichuroxx/YOLOV3/blob/master/img/4%20.%20cmd.JPG)
+![cmd](https://github.com/vichuroxx/YOLOV3-Custom-dataset-Object-detection/blob/master/img/4%20.%20cmd.JPG)
 
 Now a window will open up and in which you can label each object.controls are as follows
 D - next image
@@ -57,17 +60,17 @@ A - Previous image
 W - next label
 S - previous label
 
-![label](https://github.com/vichuroxx/YOLOV3/blob/master/img/5%20.%20label.JPG)
+![label](https://github.com/vichuroxx/YOLOV3-Custom-dataset-Object-detection/blob/master/img/5%20.%20label.JPG)
 
 Label all images. The YOLOV3\data_label\main\output\YOLO_darknet will now contain text files corresponding to each images.This stores our label. We have now successfully labelled our data.
 
-![Output_text_files](https://github.com/vichuroxx/YOLOV3/blob/master/img/3%20.%20data_output.JPG)
+![Output_text_files](https://github.com/vichuroxx/YOLOV3-Custom-dataset-Object-detection/blob/master/img/3%20.%20data_output.JPG)
 
 #### 3. Merge text output and image file input to one folder
 
 Create a folder named data or any other and copy all the input images + output text file in the YOLOV3\data_label\main\output\YOLO_darknet together. it will look like the figure below.
 
-![Merge Files](https://github.com/vichuroxx/YOLOV3/blob/master/img/6.%20merge.JPG)
+![Merge Files](https://github.com/vichuroxx/YOLOV3-Custom-dataset-Object-detection/blob/master/img/6.%20merge.JPG)
 
 #### 4. Train & Test file generation
 
@@ -115,18 +118,27 @@ yolov3-tiny.conv.15 & yolov3-tiny-obj.cfg : YOLOV3_TINY
 keep all the files, theres no issue.
 
 - Edit the yolov3.cfg &  yolov3-tiny-obj.cfg files to change anchor,filters and class.
+
+follow this for yolov3.cfg
+
+https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects 
+
+follow this for yolov3-tiny-obj.cfg
+
   - edit the classes=[no of classes you have]
-  - ![Merge Files](https://github.com/vichuroxx/YOLOV3/blob/master/img/7.%20classes.JPG)
+  - ![class](https://github.com/vichuroxx/YOLOV3-Custom-dataset-Object-detection/blob/master/img/7.%20classes.JPG)
   - edit the anchors=[anchors value in your generated file]
-  - ![Merge Files](https://github.com/vichuroxx/YOLOV3/blob/master/img/8.%20anchors.JPG)
+  - ![anchors](https://github.com/vichuroxx/YOLOV3-Custom-dataset-Object-detection/blob/master/img/8.%20anchors.JPG)
   - edit the filter=[calculate filter value from equation]
   - filter size=(num/3)*(classes+5) num is same as in .cfg file check for same
   - edit the filter values just above the anchors value (not all the filter values)
-  - ![Merge Files](https://github.com/vichuroxx/YOLOV3/blob/master/img/9.%20filter.JPG)
+  - ![filters](https://github.com/vichuroxx/YOLOV3-Custom-dataset-Object-detection/blob/master/img/9.%20filter.JPG)
 - Change path inside test.txt and train.txt from your path to google drive darknet path:  /content/darknet/data_for_colab/data/
   
 Now compress the Data for collab folder to ZIP not RAR or any other format and upload to your google drive.
 
+#### 6. Run collab file with run time assigned with GPU
 
+![Output image](https://github.com/vichuroxx/YOLOV3-Custom-dataset-Object-detection/blob/master/img/out.png)
 
 
