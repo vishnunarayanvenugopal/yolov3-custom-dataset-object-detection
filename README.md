@@ -118,6 +118,13 @@ yolov3-tiny.conv.15 & yolov3-tiny-obj.cfg : YOLOV3_TINY
 keep all the files, theres no issue.
 
 - Edit the yolov3.cfg &  yolov3-tiny-obj.cfg files to change anchor,filters and class.
+
+follow this for yolov3.cfg
+
+https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects 
+
+follow this for yolov3-tiny-obj.cfg
+
   - edit the classes=[no of classes you have]
   - ![class](https://github.com/vichuroxx/YOLOV3-Custom-dataset-Object-detection/blob/master/img/7.%20classes.JPG)
   - edit the anchors=[anchors value in your generated file]
