@@ -1,3 +1,5 @@
+#This code is to prevent collab from disconnecting
+
 1. cntrl + shift + i , Then goto console.
 
 
