@@ -9,7 +9,7 @@ Installation of YOLO V3 and object detection using the same on our own custom da
 ### START WITH FOLLOWING RESOURCES (Download Following)
 
 1. Download this github repository : https://github.com/vichuroxx/YOLOV3-Custom-dataset-Object-detection
-2. Download this collab file : https://github.com/vichuroxx/YOLOV3-Custom-dataset-Object-detection/blob/master/YoloV3.ipynb
+2. Download this collab file : https://github.com/vichuroxx/YOLOV3-Custom-dataset-Object-detection/blob/master/Yolo_tracking.ipynb
 
 ### STEPS
 
